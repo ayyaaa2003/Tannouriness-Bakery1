@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Bakery Website</title>
+</head>
+<body>
+  <header class="head">
+    <header>
+      <img src="images/Tannourines%20Bakery%20.png" alt="Logo" class="logo">
+      <nav>
+        <!-- Navigation links -->
+      </nav>
+    </header>
+    <h1>Tannourines&nbsp;&nbsp;Bakery</h1>
+    <nav class="navbar">
+      <a href="#home">Home</a> <a href="#about">About</a> <a href="#menu">Menu</a> <a href="#blog">Blog</a>
+    </nav>
+    <div class="side-bar">
+      <i class="fas fa-user" id="user"></i> <i class="fas fa-bars" id="bars"></i>
+    </div>
+  </header><!--================================Home Section===========================-->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="inner-content">
+        <h3>Welcome To Tannourines&nbsp;&nbsp;Bakery</h3>
+        <p>Where our pizzas are fresh and tasty just how you like them. Not only do we sell pizzas but even more foods you would love to try, such as our Falafel, Sumbousik, chocolate banana and heaps more. So come on down and give our bakery a nice visit with all amazing and delicious Foods that we have to offer!!</p><button class="btn">Menu</button>
+      </div>
+    </div>
+  </section><!--=========================about section=============-->
+  <section class="about" id="about">
+    <h4>About</h4>
+    <div class="about-sec">
+      <div class="img"><img src="images/pepparoni%20pizza.jpeg" alt="img"></div>
+      <div class="about-content">
+        <h3>Tannourines Bakery</h3>
+        <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Labore Repellat Doloremque Dolor Aperiam Nulla Amet Maiores Quaerat! Nobis Accusamus, Fugiat Exercitationem Assumenda Quaerat Deserunt Maxime Illo Iusto Maiores Sit Dolorem.</p>
+        <div class="about-inner">
+          <h5>Good Quality</h5>
+          <h5>Fresh Vagetables</h5>
+          <h5>Fresh dough</h5>
+          <h5>Available 24/7</h5>
+          <h5>Best Prices</h5>
+          <h5>The Best Taste</h5>
+        </div><button class="btn">visit our bakery</button>
+      </div>
+    </div>
+  </section><!--====================menu=====================-->
+  <section class="menu" id="menu">
+    <h4>Our Menu</h4>
+    <div class="menu-content">
+      <div class="in-box">
+        <img src="images/cheese%20pizza.jpng.jpeg" alt="cheese%20pizza">
+        <div class="in-content">
+          <div class="star">
+            <h2>Cheese Pizza</h2>
+            <div class="price">
+              Rs.$4.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="in-box">
+        <img src="images/tomato%20pizza.jpeg" alt="tomato%20pizza">
+        <div class="in-content">
+          <div class="star">
+            <h2>Italian Cuisine Tomato Pizza</h2>
+            <div class="price">
+              Rs.$10.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="in-box">
+        <img src="images/pepparoni%20pizza.jpeg" alt="pepparoni%20pizza">
+        <div class="in-content">
+          <div class="star">
+            <h2>Pepperoni Pizza</h2>
+            <div class="price">
+              Rs.$10.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="in-box">
+        <img src="images/mexican%20pizza.jpeg" alt="mexican%20pizza">
+        <div class="in-content">
+          <div class="star">
+            <h2>Mexican Pizza</h2>
+            <div class="price">
+              Rs.$10.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="in-box">
+        <img src="images/meat%20lovers.jpeg.webp" alt="meat%20lovers">
+        <div class="in-content">
+          <div class="star">
+            <h2>Meat lovers</h2>
+            <div class="price">
+              Rs.$10.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="in-box">
+        <img src="images/vegi%20pizza.jpeg.png" alt="vegi%20pizza">
+        <div class="in-content">
+          <div class="star">
+            <h2>vegiterian Pizza</h2>
+            <div class="price">
+              Rs.$10.00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--==================================Blog Section===============-->
+  <section id="blog" class="blog">
+    <h4>Tannourines Bakery</h4>
+    <div class="in-blog-content">
+      <h2>Pizza is too Good.</h2>
+      <p>Its too yummy. Tastes too good, you just can not resist.</p>
+    </div>
+  </section>
+  <div class="copyright">
+    <p>Design By @Tannourines Bakery</p>
+    <div class="social">
+      <a href="https://www.facebook.com/TannourinesBakery"></a>
+    </div>
+  </div><!--=============================java script ===========-->
+  <script>
+    let searchbtn = document.querySelector('#search');
+    let searchfrm = document.querySelector('.head .search-bar');
+
+    searchbtn.onclick = () => {
+        searchfrm.classList.toggle('active');
+        menu.classList.remove('active');
+    }
+
+    let menu = document.querySelector('.head .navbar');
+    document.querySelector('#bars').onclick = () => {
+        menu.classList.toggle('active');
+        searchfrm.classList.remove('active');
+
+    }
+    window.onscroll = () => {
+        menu.classList.remove('active');
+        searchfrm.classList.remove('active');
+    }
+  </script>
+</body>
+</html>
